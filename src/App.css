@@ -1,0 +1,32 @@
+.navbar {
+  border-bottom: 1px #777 solid;
+}
+
+.navbar,
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.navbar h3 {
+  padding-right: 36%;
+}
+
+.nav-links {
+  list-style: none;
+  gap: 20px;
+  padding: 6px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+}
+
+.navLogo {
+  margin-left: 35px;
+  width: 10%;
+  height: auto;
+  padding: 0 2% 0 2%;
+}
