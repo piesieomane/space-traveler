@@ -5,7 +5,7 @@ const GET_MISSIONS = 'MISSIONS/GET_MISSIONS';
 const initialState = [];
 
 export const getMissions = createAsyncThunk(GET_MISSIONS, async () => {
-  const fetchAPI = fetch('https://api.spacexdata.com/v3/missions');
+  const fetchAPI = await fetch('https://api.spacexdata.com/v3/missions');
   const data = await fetchAPI.json();
   const missions = data.map((mission) => ({
     mission_id: mission.mission_id,
@@ -13,16 +13,17 @@ export const getMissions = createAsyncThunk(GET_MISSIONS, async () => {
     mission_description: mission.description,
     isJoined: false,
   }));
-  dispatch({
-    type: GET_MISSIONS,
-    payload: missions,
-  });
+  return {
+    missions,
+  };
 });
 
 const missionsReducer = (state = initialState, action) => {
   switch (action.type) {
     case `${GET_MISSIONS}/fulfilled`:
-      return action.payload;
+      return [...state, ...action.payload.missions];
+    default:
+      return state;
   }
 };
 

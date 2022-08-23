@@ -6,16 +6,14 @@ const Mission = () => {
     <div>
       {' '}
       <tr>
-        <th>
-          <h5>missionname</h5>
-        </th>
-        <th>
-          <p>missionmissiondescription</p>
-        </th>
-        <th className="align-middle">switchBadge</th>
-        <th className="align-middle">
+        <h5>missionname</h5>
+
+        <p>missionmissiondescription</p>
+
+        <div className="align-middle">switchBadge</div>
+        <div className="align-middle">
           <JoinMission />
-        </th>
+        </div>
       </tr>
     </div>
   );
