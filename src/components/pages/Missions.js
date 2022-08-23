@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
-import { useSelector } from 'react-redux';
-import { useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+
 import Mission from './Mission';
 import { getMissions } from '../../redux/missions/missions';
 import './mission.css';
 
 const Missions = () => {
   const missionsItems = useSelector((state) => state.missions);
-  //console.log(missionsItems);
+  console.log(missionsItems);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getMissions());

@@ -1,22 +1,20 @@
 import React from 'react';
 import JoinMission from './JoinMission';
 
-const Mission = () => {
-  return (
-    <div>
-      {' '}
-      <tr>
-        <h5>missionname</h5>
+const Mission = () => (
+  <div>
+    {' '}
+    <tr>
+      <h5>missionname</h5>
 
-        <p>missionmissiondescription</p>
+      <p>missionmissiondescription</p>
 
-        <div className="align-middle">switchBadge</div>
-        <div className="align-middle">
-          <JoinMission />
-        </div>
-      </tr>
-    </div>
-  );
-};
+      <div className="align-middle">switchBadge</div>
+      <div className="align-middle">
+        <JoinMission />
+      </div>
+    </tr>
+  </div>
+);
 
 export default Mission;
