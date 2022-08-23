@@ -4,7 +4,7 @@ const GET_MISSIONS = 'MISSIONS/GET_MISSIONS';
 
 const initialState = [];
 
-const getMissions = createAsyncThunk(GET_MISSIONS, async () => {
+export const getMissions = createAsyncThunk(GET_MISSIONS, async () => {
   const fetchAPI = fetch('https://api.spacexdata.com/v3/missions');
   const data = await fetchAPI.json();
   const missions = data.map((mission) => ({
@@ -25,3 +25,5 @@ const missionsReducer = (state = initialState, action) => {
       return action.payload;
   }
 };
+
+export default missionsReducer;
