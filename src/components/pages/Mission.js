@@ -1,9 +1,10 @@
 import React from 'react';
 import JoinMission from './JoinMission';
 
-const Mission = () => (
-  <div>
-    {' '}
+const Mission = (props) => {
+  const { mission } = props;
+  console.log('props', mission);
+  return (
     <tr>
       <h5>missionname</h5>
 
@@ -14,7 +15,7 @@ const Mission = () => (
         <JoinMission />
       </div>
     </tr>
-  </div>
-);
+  );
+};
 
 export default Mission;

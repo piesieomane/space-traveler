@@ -1,13 +1,12 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-
 import Mission from './Mission';
 import { getMissions } from '../../redux/missions/missions';
 import './mission.css';
 
 const Missions = () => {
   const missionsItems = useSelector((state) => state.missions);
-  console.log(missionsItems);
+  //console.log(missionsItems);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getMissions());
@@ -24,7 +23,9 @@ const Missions = () => {
           <th>Join</th>
         </thead>
         <tbody>
-          <Mission />
+          {missionsItems.map((mission) => (
+            <Mission key={mission.mission_id} mission={mission} />
+          ))}
         </tbody>
       </table>
     </div>
