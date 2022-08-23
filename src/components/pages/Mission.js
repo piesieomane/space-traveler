@@ -13,7 +13,7 @@ const Mission = (props) => {
       <th>
         <p>{mission.mission_description}</p>
       </th>
-      <th className="align-middle">{'switchBadge'}</th>
+      <th className="align-middle">switchBadge</th>
       <th className="align-middle">
         <JoinMission isJoined={mission.isJoined} id={mission.mission_id} />
       </th>
