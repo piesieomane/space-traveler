@@ -6,10 +6,9 @@ import './index.css';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Provider } from 'react-redux';
-import { getMissions } from './redux/missions/missions';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-store.dispatch(getMissions());
+
 root.render(
   <React.StrictMode>
     <Provider store={store}>

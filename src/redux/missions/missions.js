@@ -21,7 +21,7 @@ export const getMissions = createAsyncThunk(GET_MISSIONS, async () => {
 const missionsReducer = (state = initialState, action) => {
   switch (action.type) {
     case `${GET_MISSIONS}/fulfilled`:
-      return [...state, ...action.payload.missions];
+      return action.payload.missions;
     default:
       return state;
   }

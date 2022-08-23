@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import Mission from './Mission';
@@ -6,10 +7,12 @@ import './mission.css';
 
 const Missions = () => {
   const missionsItems = useSelector((state) => state.missions);
-  console.log(missionsItems);
-  //const dispatch = useDispatch();
-  //dispatch(getMissions());
-  //console.log('dcd', dispatch);
+  //console.log(missionsItems);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getMissions());
+  }, []);
+
   return (
     <div className="mission_table">
       {' '}
