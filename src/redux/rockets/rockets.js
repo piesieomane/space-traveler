@@ -14,6 +14,7 @@ export const getRockets = createAsyncThunk(GET_ROCKETS, async () => {
     rocket_name: rocket.rocket_name,
     description: rocket.description,
     flickr_images: rocket.flickr_images[0],
+    isReserved: false,
   }));
   return {
     rockets,
@@ -30,10 +31,30 @@ export const cancelReserve = (id) => ({
   id,
 });
 
+const changeStatus = (state, id, status) => {
+  const newState = state.map((rocket) => {
+    if (rocket.id !== id) {
+      return rocket;
+    }
+    return {
+      id: rocket.id,
+      rocket_name: rocket.rocket_name,
+      description: rocket.description,
+      flickr_images: rocket.flickr_images,
+      isReserved: status,
+    };
+  });
+  return newState;
+};
+
 const rocketReducer = (state = initialState, action) => {
   switch (action.type) {
     case `${GET_ROCKETS}/fulfilled`:
       return action.payload.rockets;
+    case RESERVE_ROCKET:
+      return changeStatus(state, action.id, true);
+    case CANCEL_RESERVE:
+      return changeStatus(state, action.id, false);
     default:
       return state;
   }
