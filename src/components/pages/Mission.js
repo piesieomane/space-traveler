@@ -4,7 +4,12 @@ import JoinMission from './JoinMission';
 
 const Mission = (props) => {
   const { mission } = props;
-  console.log('props', mission);
+  const switchBadge = () => {
+    if (mission.isJoined) {
+      return <div>Active Member</div>;
+    }
+    return <div>Not A Member</div>;
+  };
   return (
     <tr>
       <th>
@@ -13,7 +18,7 @@ const Mission = (props) => {
       <th>
         <p>{mission.mission_description}</p>
       </th>
-      <th className="align-middle">switchBadge</th>
+      <th className="align-middle">{switchBadge()}</th>
       <th className="align-middle">
         <JoinMission isJoined={mission.isJoined} id={mission.mission_id} />
       </th>
