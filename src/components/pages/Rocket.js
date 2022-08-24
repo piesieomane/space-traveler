@@ -20,7 +20,10 @@ const Rocket = (props) => {
       <div className="img-rocket">
         <img src={rocket.flickr_images} alt="rocket_img" id={rocket.id} />
       </div>
-      <h2>{rocket.rocket_name}</h2>
+      <h2>
+        {rocket.isReserved ? <button type="button">Reserved</button> : ''}
+        {rocket.rocket_name}
+      </h2>
       <div>
         <p>{rocket.description}</p>
       </div>
