@@ -1,14 +1,18 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { joinMission } from '../../redux/missions/missions';
+import { joinMission, leaveMission } from '../../redux/missions/missions';
 
 const JoinMission = (props) => {
   const { isJoined, id } = props;
   const dispatch = useDispatch();
 
   const clickButton = () => {
-    dispatch(joinMission(id));
+    if (!isJoined) {
+      dispatch(joinMission(id));
+    } else {
+      dispatch(leaveMission(id));
+    }
   };
   return (
     <div>

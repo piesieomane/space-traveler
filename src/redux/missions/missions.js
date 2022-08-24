@@ -25,6 +25,11 @@ export const joinMission = (id) => ({
   id,
 });
 
+export const leaveMission = (id) => ({
+  type: LEAVE_MISSIONS,
+  id,
+});
+
 const missionStatus = (state, id, status) => {
   const newState = state.map((mission) => {
     if (mission.mission_id !== id) {
