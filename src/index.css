@@ -75,6 +75,10 @@ body {
   border-bottom: 2px solid #009879;
 }
 
+.rockets {
+  padding: 0 3% 0 3%;
+}
+
 .rocket {
   display: grid;
   grid-template-columns: 20% 80%;
