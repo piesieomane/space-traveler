@@ -4,11 +4,17 @@ import JoinMission from './JoinMission';
 
 const Mission = (props) => {
   const { mission } = props;
+
+  const isActiveStatus = () => (mission.isJoined ? 'active ' : 'inactive ');
   const switchBadge = () => {
     if (mission.isJoined) {
-      return <div>Active Member</div>;
+      return (
+        <div className={`btn-mission-${isActiveStatus()}`}>Active Member</div>
+      );
     }
-    return <div>Not A Member</div>;
+    return (
+      <div className={`btn-mission-${isActiveStatus()}`}>NOT A MEMBER</div>
+    );
   };
   return (
     <tr>

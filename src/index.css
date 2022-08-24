@@ -52,6 +52,26 @@ body {
   border-bottom: 1px solid #dddddd;
 }
 
+.btn-mission-active {
+  white-space: nowrap;
+  text-align: center;
+  color: white;
+  border: 2px solid #5bbdcc;
+  background-color: #5bbdcc;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.btn-mission-inactive {
+  white-space: nowrap;
+  text-align: center;
+  color: white;
+  border: 2px solid #6d757d;
+  background-color: #6d757d;
+  border-radius: 5px;
+  padding: 2px;
+}
+
 .styled-table tbody tr:nth-of-type(even) {
   background-color: #f3f3f3;
 }
