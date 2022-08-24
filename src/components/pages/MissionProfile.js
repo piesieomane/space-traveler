@@ -13,7 +13,7 @@ const MissionProfile = () => {
 
   return (
     <div>
-      <h1>My Missions</h1>
+      <h1>MY MISSIONS</h1>
       <table>
         <tbody>{displayMissions}</tbody>
       </table>

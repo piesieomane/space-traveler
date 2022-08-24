@@ -13,7 +13,7 @@ const RocketProfile = () => {
 
   return (
     <div>
-      <h1>My Rockets</h1>
+      <h1>MY ROCKETS</h1>
       <table>
         <tbody>{displayRockets}</tbody>
       </table>

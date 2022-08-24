@@ -5,9 +5,3 @@
   border-spacing: 0;
   border: 1px solid #ddd;
 }
-
-.mission_table th,
-.mission_table td {
-  text-align: center;
-  padding: 8px;
-}

@@ -17,12 +17,14 @@ const Missions = () => {
   return (
     <div className="mission_table">
       {' '}
-      <table>
+      <table className="styled-table">
         <thead>
-          <th>Mission</th>
-          <th>Description</th>
-          <th>Status</th>
-          <th>Join</th>
+          <tr>
+            <th>Mission</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Join</th>
+          </tr>
         </thead>
         <tbody>
           {missionsItems.map((mission) => (
