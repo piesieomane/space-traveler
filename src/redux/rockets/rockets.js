@@ -1,6 +1,8 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
 const GET_ROCKETS = 'MISSIONS/GET_ROCKETS';
+const RESERVE_ROCKET = 'MISSIONS/RESERVE_ROCKETS';
+const CANCEL_RESERVE = 'MISSIONS/CANCEL_RESERVE';
 
 const initialState = [];
 
@@ -16,6 +18,16 @@ export const getRockets = createAsyncThunk(GET_ROCKETS, async () => {
   return {
     rockets,
   };
+});
+
+export const reserveRocket = (id) => ({
+  type: RESERVE_ROCKET,
+  id,
+});
+
+export const cancelReserve = (id) => ({
+  type: CANCEL_RESERVE,
+  id,
 });
 
 const rocketReducer = (state = initialState, action) => {
