@@ -4,7 +4,7 @@ const GET_ROCKETS = 'MISSIONS/GET_ROCKETS';
 
 const initialState = [];
 
-export const getROckets = createAsyncThunk(GET_ROCKETS, async () => {
+export const getRockets = createAsyncThunk(GET_ROCKETS, async () => {
   const fetchAPI = await fetch('https://api.spacexdata.com/v3/rockets');
   const data = await fetchAPI.json();
   const rockets = data.map((rocket) => ({
@@ -20,8 +20,8 @@ export const getROckets = createAsyncThunk(GET_ROCKETS, async () => {
 
 const rocketReducer = (state = initialState, action) => {
   switch (action.type) {
-    case GET_ROCKETS:
-      return action.payload;
+    case `${GET_ROCKETS}/fulfilled`:
+      return action.payload.rockets;
     default:
       return state;
   }

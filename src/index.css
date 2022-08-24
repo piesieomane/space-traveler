@@ -1,3 +1,22 @@
 body {
   margin: 0;
 }
+
+.rocket {
+  margin-block: 2%;
+  width: 95%;
+  margin-inline: auto;
+  display: flex;
+  gap: 2%;
+  height: 30%;
+}
+
+.img-rocket {
+  height: 30%;
+  width: 100px;
+}
+
+.img-rocket img {
+  height: 30%;
+  width: 100%;
+}
