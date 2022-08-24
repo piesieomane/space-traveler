@@ -3,15 +3,6 @@ body {
   padding: 0;
 }
 
-.rocket {
-  margin-block: 2%;
-  width: 95%;
-  margin-inline: auto;
-  display: flex;
-  gap: 2%;
-  height: 30%;
-}
-
 .img-rocket img {
   height: 100%;
   width: 100%;
@@ -34,7 +25,7 @@ body {
 
 .styled-table thead tr {
   background-color: #009879;
-  color: #ffffff;
+  color: #fff;
   text-align: left;
 }
 
@@ -44,7 +35,7 @@ body {
 }
 
 .styled-table tbody tr {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #ddd;
 }
 
 .btn-mission-active {
@@ -83,6 +74,11 @@ body {
   display: grid;
   grid-template-columns: 20% 80%;
   font-size: 0.9em;
+  width: 95%;
+  margin-inline: auto;
+  gap: 2%;
+  height: 30%;
+  margin-block: 2%;
 }
 
 .rocket-img {
