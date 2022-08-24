@@ -20,3 +20,11 @@ body {
   height: 30%;
   width: 100%;
 }
+
+.profile-flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2%;
+  padding: 2%;
+  place-items: center;
+}

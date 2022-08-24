@@ -5,10 +5,11 @@ import Rocket from './Rocket';
 
 const Rockets = () => {
   const rockets = useSelector((state) => state.rockets);
-  // console.log('RKS', rockets);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getRockets());
+    if (rockets.length < 0) {
+      dispatch(getRockets());
+    }
   }, []);
   return (
     <ul>
