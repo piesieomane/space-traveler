@@ -4,7 +4,6 @@ import JoinMission from './JoinMission';
 
 const Mission = (props) => {
   const { mission } = props;
-  console.log('props', mission);
   return (
     <tr>
       <th>
