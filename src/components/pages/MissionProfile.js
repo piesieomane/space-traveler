@@ -7,14 +7,15 @@ const MissionProfile = () => {
   const reservedMissions = missionProfile.filter((mission) => mission.isJoined);
   const displayMissions = reservedMissions.map((mission) => (
     <tr key={mission.mission_id}>
-      <h2>{mission.mission_name}</h2>
+      <td>
+        <p className="profile-item">{mission.mission_name}</p>
+      </td>
     </tr>
   ));
 
   return (
     <div>
-      <h1>MY MISSIONS</h1>
-      <table>
+      <table className="styled-table">
         <tbody>{displayMissions}</tbody>
       </table>
     </div>

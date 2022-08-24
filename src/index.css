@@ -12,8 +12,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2%;
-  padding: 2%;
-  place-items: center;
+  padding: 2% 3% 0 6%;
 }
 
 .styled-table {
@@ -64,6 +63,10 @@ body {
 
 .styled-table tbody tr:last-of-type {
   border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr .profile-item {
+  font-size: 1.5rem;
 }
 
 .rockets {

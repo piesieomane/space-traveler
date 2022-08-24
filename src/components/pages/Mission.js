@@ -24,8 +24,8 @@ const Mission = (props) => {
       <td>
         <p>{mission.mission_description}</p>
       </td>
-      <td className="align-middle">{switchBadge()}</td>
-      <td className="align-middle">
+      <td>{switchBadge()}</td>
+      <td>
         <JoinMission isJoined={mission.isJoined} id={mission.mission_id} />
       </td>
     </tr>
