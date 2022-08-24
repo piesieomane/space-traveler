@@ -90,3 +90,42 @@ body {
 .rocket h2 {
   font-size: 1.2rem;
 }
+
+.btn-rocket-Reserve {
+  white-space: nowrap;
+  text-align: center;
+  color: white;
+  border: 2px solid #007bff;
+  background-color: #007bff;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.btn-rocket-Reserve:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.btn-rocket-Reserve:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.btn-rocket-Cancel {
+  white-space: nowrap;
+  text-align: center;
+  color: #788087;
+  border: 2px solid #788087;
+  background-color: white;
+  border-radius: 3px;
+  padding: 5px;
+  width: 150px;
+}
+
+.btn-reserved {
+  color: white;
+  background-color: #18a2b8;
+  font-size: 0.5rem;
+  border: 2px solid #18a2b8;
+  border-radius: 3px;
+  margin-right: 15px;
+}
