@@ -12,13 +12,8 @@ body {
   height: 30%;
 }
 
-.img-rocket {
-  height: 30%;
-  width: 100px;
-}
-
 .img-rocket img {
-  height: 30%;
+  height: 100%;
   width: 100%;
 }
 
@@ -78,4 +73,20 @@ body {
 
 .styled-table tbody tr:last-of-type {
   border-bottom: 2px solid #009879;
+}
+
+.rocket {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  font-size: 0.9em;
+}
+
+.rocket-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rocket h2 {
+  font-size: 1.2rem;
 }
