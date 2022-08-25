@@ -3,14 +3,14 @@ import Renderer from 'react-test-renderer';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from '../redux/configureStore';
-import Navbar from '../components/Navbar';
+import Missions from '../components/pages/Missions';
 
 it('renders correctly', () => {
   const tree = Renderer.create(
     <React.StrictMode>
       <Provider store={store}>
         <BrowserRouter>
-          <Navbar />
+          <Missions />
         </BrowserRouter>
       </Provider>
     </React.StrictMode>,

@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Space Travelers
 
-## Available Scripts
+> The Space Travelers is a a React, Redux application based on the [SpaceX API](https://docs.spacexdata.com/).
 
-In the project directory, you can run:
+- In this application we're fetching the returned data from the API in the Redux store.
 
-### `npm start`
+- The user can reserve a rocket and it'll update the state automatically, reserve a dragon and it'll update the state automatically, and also the user can join a mission in this application.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Built With
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React
+- Redux
+- CSS
+- Javascript
 
-### `npm test`
+## Dev Dependencies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React-routerDOM
+- Redux-toolkit
+- eslint
+- React-test-renderer
+- createAsyncThunk
 
-### `npm run build`
+## Live Demo
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Live Demo Link]()
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To get a local copy up and running follow these simple steps:
 
-### `npm run eject`
+- Copy this link `https://github.com/piesieomane/space-traveller.git`.
+- Get the directory that you want to clone the repository.
+- Open the command prompt in this directory.
+- Write `git clone `https://github.com/piesieomane/space-traveller.git``.
+- Go to the repository folder in your command prompt, run `cd space-travellers-hub`.
+- Run `npm install`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. NodeJS
+2. NPM
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Build
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Type these commands into the terminal:
 
-## Learn More
+- npm run build
+- Open dist/index.html in your web browser.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Run the application in local environment
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Type this command in your terminal
 
-### Code Splitting
+- npm run start
+- Your web browser will open on localhost
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Run tests
 
-### Analyzing the Bundle Size
+Type this command into the terminal:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- npm run test
 
-### Making a Progressive Web App
+## Authors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+👤 **Omane Piesie Yeboah**
 
-### Advanced Configuration
+- GitHub: [@githubhandle](https://github.com/piesieomane)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/piesieomane)
 
-### Deployment
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Contributions, issues, and feature requests are welcome!
 
-### `npm run build` fails to minify
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- [SpaceX API](https://docs.spacexdata.com/) for providing the data for free
+
+## 📝 License
+
+This project is not licensed.
