@@ -25,7 +25,7 @@
 
 ## Live Demo
 
-- [Live Demo Link]()
+- [Live Demo Link](https://63077d42683d8603489e104a--delicate-tulumba-2330ac.netlify.app/)
 
 ## Getting Started
 
