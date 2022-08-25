@@ -7,14 +7,15 @@ const RocketProfile = () => {
   const reservedRockets = rocketProfile.filter((rocket) => rocket.isReserved);
   const displayRockets = reservedRockets.map((rocket) => (
     <tr key={rocket.id}>
-      <h2>{rocket.rocket_name}</h2>
+      <td>
+        <p className="profile-item">{rocket.rocket_name}</p>
+      </td>
     </tr>
   ));
 
   return (
     <div>
-      <h1>My Rockets</h1>
-      <table>
+      <table className="styled-table">
         <tbody>{displayRockets}</tbody>
       </table>
     </div>

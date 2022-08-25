@@ -3,9 +3,14 @@ import RocketProfile from './RocketProfile';
 
 const MyProfile = () => (
   <div className="profile-flex">
-    <RocketProfile />
-    {' '}
-    <MissionProfile />
+    <div>
+      <h1>My Rockets</h1>
+      <RocketProfile />
+    </div>
+    <div>
+      <h1>My Missions</h1>
+      <MissionProfile />
+    </div>
   </div>
 );
 export default MyProfile;

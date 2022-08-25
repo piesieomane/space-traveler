@@ -15,22 +15,37 @@ const Rocket = (props) => {
     }
   };
 
+  const isRocketStatus = () => (rocket.isReserved ? 'Cancel ' : 'Reserve ');
+
   return (
     <div className="rocket">
       <div className="img-rocket">
         <img src={rocket.flickr_images} alt="rocket_img" id={rocket.id} />
       </div>
-      <h2>
-        {rocket.isReserved ? <button type="button">Reserved</button> : ''}
-        {rocket.rocket_name}
-      </h2>
       <div>
-        <p>{rocket.description}</p>
+        <h2>{rocket.rocket_name}</h2>
+        <div>
+          <p>
+            {' '}
+            {rocket.isReserved ? (
+              <button type="button" className="btn-reserved">
+                Reserved
+              </button>
+            ) : (
+              ''
+            )}
+            {rocket.description}
+          </p>
+        </div>
+        <button
+          type="button"
+          onClick={handleClick}
+          className={`btn-rocket-${isRocketStatus()}`}
+        >
+          {isRocketStatus()}
+          Rocket
+        </button>
       </div>
-      <button type="button" onClick={handleClick}>
-        {rocket.isReserved ? 'Cancel' : 'Reserve'}
-        Rocket
-      </button>
     </div>
   );
 };
