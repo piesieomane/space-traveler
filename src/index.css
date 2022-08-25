@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.img-rocket img {
+  height: 100%;
+  width: 100%;
+}
+
+.profile-flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2%;
+  padding: 2% 3% 0 6%;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  font-size: 0.9em;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+  background-color: #009879;
+  color: #fff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.btn-mission-active {
+  white-space: nowrap;
+  text-align: center;
+  color: white;
+  border: 2px solid #5bbdcc;
+  background-color: #5bbdcc;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.btn-mission-inactive {
+  white-space: nowrap;
+  text-align: center;
+  color: white;
+  border: 2px solid #6d757d;
+  background-color: #6d757d;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr .profile-item {
+  font-size: 1.5rem;
+}
+
+.rockets {
+  padding: 0 3% 0 3%;
+}
+
+.rocket {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  font-size: 0.9em;
+  width: 95%;
+  margin-inline: auto;
+  gap: 2%;
+  height: 30%;
+  margin-block: 2%;
+}
+
+.rocket-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rocket h2 {
+  font-size: 1.2rem;
+}
+
+.btn-rocket-Reserve {
+  white-space: nowrap;
+  text-align: center;
+  color: white;
+  border: 2px solid #007bff;
+  background-color: #007bff;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.btn-rocket-Reserve:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.btn-rocket-Reserve:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.btn-rocket-Cancel {
+  white-space: nowrap;
+  text-align: center;
+  color: #788087;
+  border: 2px solid #788087;
+  background-color: white;
+  border-radius: 3px;
+  padding: 5px;
+  width: 150px;
+}
+
+.btn-reserved {
+  color: white;
+  background-color: #18a2b8;
+  font-size: 0.5rem;
+  border: 2px solid #18a2b8;
+  border-radius: 3px;
+  margin-right: 15px;
+}
