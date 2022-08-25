@@ -24,6 +24,10 @@
   text-decoration: none;
 }
 
+.nav-links li a.active {
+  text-decoration: underline;
+}
+
 .navLogo {
   margin-left: 35px;
   width: 10%;
